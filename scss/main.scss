@@ -2,6 +2,9 @@
 @import "./variables";
 
 // G R I D
+html {
+  width: 100%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -91,6 +94,7 @@ body {
 
 ul.stars-list {
   margin-top: 40px;
+  padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -205,10 +209,79 @@ ul.stars-list {
   }
 }
 
-// MOBILE
+// MOBILE(Media queries)
 
-@media screen and (max-width: 400px) {
-  .body {
-    background-color: blueviolet;
+@media only screen and (max-width:400px){
+  body {
+    position: relative;
   }
+  .bg1 {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    position: absolute;
+    top: -70px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .bg2 {
+    display: none;
+  }
+
+  div.mainer div.header {
+    display: block;
+    text-align: center;
+    
+    .headline {
+      margin-top: 60px;
+      width: 100%;
+      
+      h1 {
+        margin: 0 auto 20px;
+        width: 80%;
+        font-size: 28px;
+      }
+      p {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 13px;
+      }
+    }
+    ul.stars-list {
+      width: 100%;
+      display: block;
+      
+      & li.stars-card {
+        margin: 15px auto;
+
+        & .stars-wrapper {
+          margin-left: -20px;
+        }
+        & p{
+          margin-top: 20px;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  div.mainer div.reviews-section {
+    display: block;
+    height: auto;
+
+    .reviews-card {
+      margin: 15px auto;
+      margin-right: 0 ;
+      height: auto ;
+      width: auto;
+    }
+
+  }
+
+  div.mainer div.attribution {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  
 }

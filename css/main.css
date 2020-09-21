@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -82,6 +86,7 @@ body .mainer .reviews-section .reviews-card:nth-of-type(3) {
 
 ul.stars-list {
   margin-top: 40px;
+  padding: 0;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,9 +223,66 @@ ul.stars-list li.stars-card p {
   color: #3e52a3;
 }
 
-@media screen and (max-width: 400px) {
-  .body {
-    background-color: blueviolet;
+@media only screen and (max-width: 400px) {
+  body {
+    position: relative;
+  }
+  .bg1 {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    position: absolute;
+    top: -70px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .bg2 {
+    display: none;
+  }
+  div.mainer div.header {
+    display: block;
+    text-align: center;
+  }
+  div.mainer div.header .headline {
+    margin-top: 60px;
+    width: 100%;
+  }
+  div.mainer div.header .headline h1 {
+    margin: 0 auto 20px;
+    width: 80%;
+    font-size: 28px;
+  }
+  div.mainer div.header .headline p {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 13px;
+  }
+  div.mainer div.header ul.stars-list {
+    width: 100%;
+    display: block;
+  }
+  div.mainer div.header ul.stars-list li.stars-card {
+    margin: 15px auto;
+  }
+  div.mainer div.header ul.stars-list li.stars-card .stars-wrapper {
+    margin-left: -20px;
+  }
+  div.mainer div.header ul.stars-list li.stars-card p {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  div.mainer div.reviews-section {
+    display: block;
+    height: auto;
+  }
+  div.mainer div.reviews-section .reviews-card {
+    margin: 15px auto;
+    margin-right: 0;
+    height: auto;
+    width: auto;
+  }
+  div.mainer div.attribution {
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=main.css.map */
