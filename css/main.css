@@ -226,7 +226,6 @@ ul.stars-list li.stars-card p {
 @media only screen and (max-width: 400px) {
   body {
     position: relative;
-    overflow-x: hidden;
   }
   .bg1 {
     background-image: url(../images/bg-pattern-top-mobile.svg);
